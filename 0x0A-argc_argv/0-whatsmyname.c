@@ -1,15 +1,16 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints the name of the program
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0
+ * main - Entry point. Prints the name of the program.
+ *
+ * @argc: The number of command-line arguments.
+ * @argv: An array of pointers to the command-line arguments.
+ *
+ * Return: Always 0.
  */
-
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
-
-	return (0);
+    printf("%s\n", *argv);
+    return (0);
+}
